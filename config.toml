@@ -1,0 +1,42 @@
+[model_arguments]
+v2 = false
+v_parameterization = false
+# pretrained_model_name_or_path = "training_models/sd_xl_base_1.0.safetensors"
+pretrained_model_name_or_path = "stabilityai/stable-diffusion-xl-base-1.0"
+
+[optimizer_arguments]
+optimizer_type = "adafactor"
+optimizer_args = [ "scale_parameter=False", "relative_step=False", "warmup_init=False" ]
+lr_scheduler = "constant_with_warmup"
+lr_warmup_steps = 100
+learning_rate = 1e-5
+max_grad_norm = 0.0
+train_text_encoder = true
+
+[dataset_arguments]
+debug_dataset = false
+
+[training_arguments]
+output_dir = "output/"
+output_name = "myProjectName"
+save_precision = "fp32"
+save_n_epoch_ratio = 1
+save_state = false
+train_batch_size = 2
+mem_eff_attn = false
+max_train_steps = 2000
+max_data_loader_n_workers = 1
+persistent_data_loader_workers = true
+gradient_checkpointing = true
+# gradient_accumulation_steps = 1
+mixed_precision = "bf16"
+logging_dir = "logs"
+log_prefix = "last"
+xformers = true
+cache_latents = true
+full_bf16 = true
+prior_loss_weight = 1.0
+
+[saving_arguments]
+save_model_as = "safetensors"
+# save_every_n_steps = 100
