@@ -12,7 +12,7 @@ echo "Installing required libcudnn release 8.7.0.84-1..."
 apt install -y libcudnn8=8.7.0.84-1+cuda11.8 libcudnn8-dev=8.7.0.84-1+cuda11.8 --allow-change-held-packages
 
 # Install libgl1 for libGL.so.1
-apt-get update && apt-get install libgl1
+apt-get update -y && apt-get install -y libgl1
 
 # Check if the venv folder doesn't exist
 if [ ! -d "$SCRIPT_DIR/venv" ]; then
