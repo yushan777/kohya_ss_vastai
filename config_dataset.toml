@@ -1,0 +1,17 @@
+[[datasets]]
+keep_tokens = 2
+
+	[[datasets.subsets]]
+	image_dir = 'training_images'
+	class_tokens = 'ohwx person'
+	num_repeats = 40
+
+	[[datasets.subsets]]
+	is_reg = true
+	image_dir = 'reg_images'
+	class_tokens = 'person'
+	num_repeats = 1
+	keep_tokens = 1
+
+[general]
+resolution = 1024
