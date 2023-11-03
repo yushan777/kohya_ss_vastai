@@ -1,4 +1,4 @@
-# Jupyter Notebook for Dreambooth Training SDXL using Kohya_ss scripts on Vast.ai
+# Jupyter Notebook for Dreambooth Training SDXL using Kohya_ss (bmaltais) on Vast.ai
 
 In a new Vast.ai GPU instance, in an empty notebook, paste the following and run the cell. 
 
