@@ -5,6 +5,9 @@ In a new Vast.ai GPU instance, in an empty notebook, paste the following and run
 ```
 !git clone https://github.com/bmaltais/kohya_ss.git
 !wget https://raw.githubusercontent.com/yushan777/kohya_ss_vastai/main/!sdxl_kohya_vastai_no_config.ipynb
+!wget https://raw.githubusercontent.com/yushan777/kohya_ss_vastai/main/prereqs.sh
+!chmod +x prereqs.sh
+!bash prereqs.sh
 !mv '!sdxl_kohya_vastai_no_config.ipynb' 'kohya_ss'
 ```
 
