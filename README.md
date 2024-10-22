@@ -9,7 +9,7 @@ In a new Vast.ai GPU instance, in an empty notebook, paste the following and run
 !git clone https://github.com/kohya-ss/sd-scripts.git kohya_sd_scripts_dev
 
 # goto the dir
-cd kohya_sd_scripts_dev
+!cd kohya_sd_scripts_dev
 
 # checkout dev branch (warning this may not always be available)
 git checkout dev
