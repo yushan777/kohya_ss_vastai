@@ -12,7 +12,7 @@ In a new Vast.ai GPU instance, in an empty notebook, paste the following and run
 !cd kohya_sd_scripts_dev
 
 # checkout dev branch (warning this may not always be available)
-git checkout dev
+!git checkout dev
 
 !wget https://raw.githubusercontent.com/yushan777/kohya_ss_vastai/dev/!sdxl_kohya_vastai_no_config.ipynb
 #!wget https://raw.githubusercontent.com/yushan777/kohya_ss_vastai/dev/prereqs.sh
