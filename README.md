@@ -3,7 +3,8 @@
 In a new Vast.ai GPU instance, in an empty notebook, paste the following and run the cell. 
 
 ```
-!git clone https://github.com/bmaltais/kohya_ss.git
+#clone kohya_ss scripts repo - putting it in a custom dir name 'kohya_sd_scripts-dev'
+!git clone https://github.com/kohya-ss/sd-scripts.git kohya_sd_scripts_dev2
 !wget https://raw.githubusercontent.com/yushan777/kohya_ss_vastai/main/!sdxl_kohya_vastai_no_config.ipynb
 !wget https://raw.githubusercontent.com/yushan777/kohya_ss_vastai/main/prereqs.sh
 !chmod +x prereqs.sh
